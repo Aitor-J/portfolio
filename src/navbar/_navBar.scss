@@ -1,0 +1,67 @@
+// //Main colors
+// $mainColor: black;
+// $secondaryColor: white;
+
+// //Secondary colors
+// $mainColor2: #5c1a96;
+// $secondaryColor2: #bc6aff;
+
+// //Font-Family
+// $fontMainTitle: "Montserrat";
+// $fontText: "Abel";
+
+// //Font-Size
+// $fontMainSize: 3rem;
+// $fontTextSize: 2rem;
+
+._navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $fontMainTitle;
+  text-shadow: 1px 1px 1px rgb(242, 0, 255);
+  color: $mainColor;
+  padding: 1vh 2vw 1vh 2vw;
+  height: 10vh;
+  font-size: $fontTextSize;
+
+  &__name {
+    color: $secondaryColor;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-family: $fontMainTitle;
+    font-size: $fontTextSize;
+    font-weight: 100;
+  }
+
+  &__container {
+    &__ul {
+      padding: 2vh 0 1vh 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-family: $fontMainTitle;
+
+      &__li {
+        color: $secondaryColor;
+        padding: 1vh 2vw 1vh 2vw;
+        font-size: $fontTextSize;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          color: $mainColor;
+          padding: 1vh 2vw 1vh 2vw;
+          font-size: $fontTextSize;
+          letter-spacing: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "sass/_variables.scss";
+@import "sass/_abstract.scss";
+@import "sass/_typography.scss";
+@import "sass/_index.scss";
+@import "./home/_home";
+@import "./navbar/_navBar";
+@import "./skills/_skills";
+@import "./languageCardList/_languageCard";
+@import "./languageCardList/_languageCardList";
+@import "./skillsCardList/skillCard";
+@import "./skillsCardList/SkillsCardList";
+@import "./education/education";
+@import "./projects/projects";

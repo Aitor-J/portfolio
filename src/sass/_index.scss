@@ -1,0 +1,11 @@
+.app {
+  height: 240vh;
+  width: 100vw;
+  display: flex;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(9, 9, 121, 1) 47%,
+    rgba(89, 19, 140, 1) 100%
+  );
+}

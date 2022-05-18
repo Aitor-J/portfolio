@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+._home {
+  height: 100vh;
+  color: $secondaryColor2;
+  font-size: $fontMainSize;
+  font-family: $fontMainTitle;
+
+  &__title {
+    color: $mainColor;
+    font-weight: 400;
+    margin-left: 5vw;
+    margin-top: 10vh;
+    font-size: 7vw;
+    font-family: $fontMainTitle;
+
+    &__span {
+      font-weight: 100;
+      opacity: 30%;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      &__desc {
+        margin-top: 10vh;
+        color: $secondaryColor;
+        width: 50vw;
+        height: auto;
+        font-size: $fontTextSize;
+        font-family: $fontMainTitle;
+        margin-right: 5vw;
+        font-style: italic;
+        font-weight: 100;
+        text-shadow: 1px 1px 1px rgb(110, 255, 110);
+        transition: 1s ease-in-out;
+
+        &:hover {
+          color: rgb(255, 13, 0);
+          text-shadow: 1px 1px 1px rgb(177, 0, 171);
+        }
+
+        &__name {
+          font-family: $fontMainTitle;
+          color: $secondaryColor;
+          font-size: 3vw;
+          font-weight: 400;
+          margin-top: 5vh;
+          margin-right: 5vw;
+
+          &__span {
+            font-weight: 600;
+            text-shadow: 2px 2px 2px red;
+          }
+        }
+      }
+    }
+  }
+  &__scroll {
+    margin-top: 15vh;
+    background-color: $secondaryColor;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__img {
+      width: 3vw;
+    }
+
+    &__down {
+      color: $secondaryColor;
+      font-size: $fontMainSize;
+      font-weight: 500;
+      margin-top: 2vh;
+      font-family: $fontMainTitle;
+      animation: pulse-title 5s infinite;
+      cursor: pointer;
+      background-color: rgb(23, 17, 111);
+      padding: 1vh 2vw 1vh 2vw;
+      border: solid $mainColor;
+      border-radius: 40px;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        letter-spacing: 0.2vw;
+        transition: 1s ease-in-out;
+        background-color: $mainColor;
+        color: $secondaryColor2;
+      }
+
+      @keyframes pulse-title {
+        0% {
+          transform: scale(0.95);
+        }
+
+        70% {
+          transform: scale(1);
+        }
+
+        100% {
+          transform: scale(0.95);
+        }
+      }
+    }
+  }
+}

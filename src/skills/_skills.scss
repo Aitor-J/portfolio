@@ -1,0 +1,55 @@
+._skills {
+  position: absolute;
+  height: 90vh;
+  width: 100vw;
+  color: $secondaryColor2;
+  font-size: $fontMainSize;
+  font-family: $fontMainTitle;
+
+  &__container {
+    background-color: $secondaryColor;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    &__title {
+      margin-top: 10vh;
+      color: $mainColor;
+      font-weight: 400;
+      margin-left: 5vw;
+      font-size: 7vw;
+      font-family: $fontMainTitle;
+      height: 30vh;
+
+      &__span {
+        font-weight: 100;
+        opacity: 30%;
+      }
+
+      &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+
+        &__desc {
+          color: $mainColor;
+          width: 50vw;
+          height: auto;
+          font-size: $fontTextSize;
+          font-family: $fontMainTitle;
+          font-style: italic;
+          font-weight: 300;
+          text-shadow: 1px 1px 1px rgb(110, 255, 110);
+          transition: 1s ease-in-out;
+
+          &:hover {
+            color: rgb(255, 13, 0);
+            text-shadow: 1px 1px 1px rgb(177, 0, 171);
+          }
+        }
+      }
+    }
+  }
+}
