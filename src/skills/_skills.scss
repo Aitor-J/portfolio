@@ -1,6 +1,5 @@
 ._skills {
-  position: absolute;
-  height: 90vh;
+  height: 100vh;
   width: 100vw;
   color: $secondaryColor2;
   font-size: $fontMainSize;
@@ -20,7 +19,7 @@
       margin-left: 5vw;
       font-size: 7vw;
       font-family: $fontMainTitle;
-      height: 30vh;
+      height: 20vh;
 
       &__span {
         font-weight: 100;

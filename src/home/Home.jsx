@@ -1,14 +1,25 @@
+import { useRef } from "react";
 import Education from "../education/Education";
 import NavBar from "../navbar/Navbar";
 import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
+import handleScroll from "../utils/scroll";
 
 const Home = () => {
-  return (
-    <div>
-      <div className="_home">
-        <NavBar />
+  const homeRef = useRef();
+  const skillsRef = useRef();
+  const educationRef = useRef();
+  const projectsRef = useRef();
 
+  return (
+    <div ref={homeRef}>
+      <div className="_home">
+        <NavBar
+          homeRef={homeRef}
+          skillsRef={skillsRef}
+          educationRef={educationRef}
+          projectsRef={projectsRef}
+        />
         <h1 className="_home__title">
           <span className="_home__title__span">{"<"}</span> WebDevelopper{" "}
           <span className="_home__title__span">{" />"}</span>
@@ -41,8 +52,12 @@ const Home = () => {
             src="../../public/assets/instagramLogo.png"
             alt="logoInsta"
           />
-          <button type="button" className="_home__scroll__down">
-            Check this out
+          <button
+            type="button"
+            className="_home__scroll__down"
+            onClick={() => handleScroll(skillsRef)}
+          >
+            V
           </button>
           <img
             className="_home__scroll__img"
@@ -55,9 +70,16 @@ const Home = () => {
             alt="logoInsta"
           />
         </div>
-        <Skills />
-        <Education />
-        <Projects />
+
+        <div ref={skillsRef}>
+          <Skills />
+        </div>
+        <div ref={educationRef}>
+          <Education />
+        </div>
+        <div ref={projectsRef}>
+          <Projects />
+        </div>
       </div>
     </div>
   );

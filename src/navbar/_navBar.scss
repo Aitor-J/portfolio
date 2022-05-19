@@ -1,20 +1,9 @@
-// //Main colors
-// $mainColor: black;
-// $secondaryColor: white;
-
-// //Secondary colors
-// $mainColor2: #5c1a96;
-// $secondaryColor2: #bc6aff;
-
-// //Font-Family
-// $fontMainTitle: "Montserrat";
-// $fontText: "Abel";
-
-// //Font-Size
-// $fontMainSize: 3rem;
-// $fontTextSize: 2rem;
-
 ._navbar {
+
+  backdrop-filter: blur( 2px );
+  -webkit-backdrop-filter: blur( 2px );
+
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
