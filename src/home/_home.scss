@@ -25,7 +25,6 @@
       margin-top: 13vh;
       font-size: 7vw;
       font-family: $fontMainTitle;
-      cursor: pointer;
       z-index: 20;
     }
 
@@ -36,7 +35,6 @@
       margin-top: 13vh;
       font-size: 7vw;
       font-family: $fontMainTitle;
-      cursor: pointer;
       animation-name: reverse-rubberBand;
       animation-duration: 1s;
       transition: 1s ease-in-out;

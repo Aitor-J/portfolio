@@ -6,8 +6,8 @@ const NavBar = ({ homeRef, skillsRef, educationRef, projectsRef }) => {
     <div className="_navbar">
       <div className="_navbar__dark__container">
         <img
-          src="../../public/assets/soundLogo.png"
-          alt="soundLogo"
+          src="../../public/assets/moonLogo.png"
+          alt="moonLogo"
           className="_navbar__img"
         />
         <h2 className="_navbar__dark">
