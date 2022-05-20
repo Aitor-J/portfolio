@@ -1,3 +1,4 @@
+import { Slide } from "react-awesome-reveal";
 import { useRef } from "react";
 import Education from "../education/Education";
 import NavBar from "../navbar/Navbar";
@@ -20,17 +21,37 @@ const Home = () => {
           educationRef={educationRef}
           projectsRef={projectsRef}
         />
-        <h1 className="_home__title">
-          <span className="_home__title__span">{"<"}</span> WebDevelopper{" "}
-          <span className="_home__title__span">{" />"}</span>
-        </h1>
+        <Slide direction="left">
+          <div className="_home__title">
+            <span className="_home__title__span">{"<"}</span>
+            <h1 className="_home__title__bounce">W</h1>
+            <h1 className="_home__title__bounce">e</h1>
+            <h1 className="_home__title__bounce">b</h1>
+            <h1 className="_home__title__bounce">D</h1>
+            <h1 className="_home__title__bounce">e</h1>
+            <h1 className="_home__title__bounce">v</h1>
+            <h1 className="_home__title__bounce">e</h1>
+            <h1 className="_home__title__bounce">l</h1>
+            <h1 className="_home__title__bounce">o</h1>
+            <h1 className="_home__title__bounce">p</h1>
+            <h1 className="_home__title__bounce">e</h1>
+            <h1 className="_home__title__bounce">r</h1>
+            <span className="_home__title__span">{" />"}</span>
+          </div>
+        </Slide>
+
         <div className="_home__title__container">
           <p className="_home__title__container__desc">
             {" "}
-            <span className="_home__title__span">{"<p>  "}</span>
+            <span className="_home__title__container__desc__span">
+              {"<p>  "}
+            </span>
             Traveler and adventurer, i’ve always been looking for new
             challenges, and I beleive the meaning of life is an infinite
-            learning. <span className="_home__title__span">{"  </p>"}</span>
+            learning.{" "}
+            <span className="_home__title__container__desc__span">
+              {"  </p>"}
+            </span>
           </p>
         </div>
         <div className="_home__title__container">
@@ -42,16 +63,6 @@ const Home = () => {
           </h2>
         </div>
         <div className="_home__scroll">
-          <img
-            className="_home__scroll__img"
-            src="../../public/assets/linkedinLogo.png"
-            alt="logoInsta"
-          />
-          <img
-            className="_home__scroll__img"
-            src="../../public/assets/instagramLogo.png"
-            alt="logoInsta"
-          />
           <button
             type="button"
             className="_home__scroll__down"
@@ -59,16 +70,6 @@ const Home = () => {
           >
             V
           </button>
-          <img
-            className="_home__scroll__img"
-            src="../../public/assets/facebookLogo.png"
-            alt="logoInsta"
-          />
-          <img
-            className="_home__scroll__img"
-            src="../../public/assets/instagramLogo.png"
-            alt="logoInsta"
-          />
         </div>
 
         <div ref={skillsRef}>

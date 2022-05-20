@@ -1,13 +1,12 @@
-import datas from "./dataLanguages";
-import LanguageCard from "./LanguageCard";
+import Carousel from "../carousel/carousel";
 
 const LanguageCardList = () => {
   return (
     <div className="_languageCardList">
-      {datas &&
-        datas.map((data, index) => (
-          <LanguageCard key={index} logo={data.logo} name={data.name} />
-        ))}
+      <h1 className="_languageCardList__title">Web technologies</h1>
+      <div className="_languageCardList__list">
+        <Carousel />
+      </div>
     </div>
   );
 };

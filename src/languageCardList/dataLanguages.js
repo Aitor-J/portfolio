@@ -34,6 +34,11 @@ const dataLanguages = [
     logo: "../../public/assets/logo_footer/tailwindLogo.png",
     level: "75%",
   },
+  {
+    name: "Git workflow",
+    logo: "../../public/assets/logo_footer/githubLogo.png",
+    level: "75%",
+  },
 ];
 
 export default dataLanguages;
