@@ -1,13 +1,8 @@
-import datas from "./dataSkills";
-import SkillCard from "./SkillCard";
-
 const SkillsCardList = () => {
   return (
     <div className="_skillsCardList">
-      {datas &&
-        datas.map((data, index) => (
-          <SkillCard key={index} logo={data.logo} name={data.name} />
-        ))}
+      <h1 className="_skillsCardList__title">My soft skills</h1>
+      <div className="_skillsCardList__list">Hello</div>
     </div>
   );
 };

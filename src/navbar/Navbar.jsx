@@ -4,7 +4,16 @@ import handleScroll from "../utils/scroll";
 const NavBar = ({ homeRef, skillsRef, educationRef, projectsRef }) => {
   return (
     <div className="_navbar">
-      <h2 className="_navbar__name">Aitor_Jurquet</h2>
+      <div className="_navbar__dark__container">
+        <img
+          src="../../public/assets/moonLogo.png"
+          alt="moonLogo"
+          className="_navbar__img"
+        />
+        <h2 className="_navbar__dark">
+          Dark Mode <span className="_navbar__dark__span"> OFF</span>
+        </h2>
+      </div>
       <nav className="_navbar__container">
         <ul className="_navbar__container__ul">
           <li

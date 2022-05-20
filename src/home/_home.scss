@@ -1,3 +1,6 @@
+@import 'animate.css';
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -10,16 +13,40 @@
   font-family: $fontMainTitle;
 
   &__title {
-    color: $mainColor;
-    font-weight: 400;
-    margin-left: 5vw;
-    margin-top: 13vh;
-    font-size: 7vw;
-    font-family: $fontMainTitle;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: row;
 
     &__span {
       font-weight: 100;
       opacity: 30%;
+      color: $mainColor;
+      margin-left: 0.3vw;
+      margin-top: 13vh;
+      font-size: 7vw;
+      font-family: $fontMainTitle;
+      z-index: 20;
+    }
+
+    &__bounce{
+      color: $mainColor;
+      font-weight: 600;
+      margin-left: 0.3vw;
+      margin-top: 13vh;
+      font-size: 7vw;
+      font-family: $fontMainTitle;
+      animation-name: reverse-rubberBand;
+      animation-duration: 1s;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+        transition: 0.3s;
+        color: $secondaryColor;
+
+      }
+
     }
 
     &__container {
@@ -43,6 +70,19 @@
         &:hover {
           color: rgb(255, 13, 0);
           text-shadow: 1px 1px 1px rgb(177, 0, 171);
+        }
+
+
+        &__span {
+          font-weight: 100;
+          opacity: 30%;
+          color: $mainColor;
+          margin-left: 0.3vw;
+          margin-top: 13vh;
+          font-size: 2vw;
+          font-family: $fontMainTitle;
+          cursor: pointer;
+          z-index: 20;
         }
 
         &__name {
@@ -86,51 +126,31 @@
   }
   &__scroll {
     margin-top: 10vh;
-    background-color: $secondaryColor;
     height: 10vh;
+    margin-bottom: 10vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 
-    &__img {
-      width: 3vw;
-    }
 
     &__down {
-      color: $secondaryColor;
+      color: $mainColor2;
       font-size: $fontMainSize;
-      background-color: $mainColor;
-      font-weight: 500;
+      background: none;
+      font-weight: 300;
       margin-top: 2vh;
       font-family: $fontMainTitle;
-      animation: pulse-title 5s infinite;
       cursor: pointer;
       padding: 1vh 2vw 1vh 2vw;
-      border: solid $mainColor;
+      border: solid 2px $mainColor2;
       border-radius: 50px;
       transition: 1s ease-in-out;
       
 
       &:hover {
-        letter-spacing: 0.2vw;
         transition: 1s ease-in-out;
         background-color: $mainColor;
-        color: $secondaryColor2;
-      }
-
-      @keyframes pulse-title {
-        0% {
-          transform: scale(0.95);
-        }
-
-        70% {
-          transform: scale(1);
-        }
-
-        100% {
-          transform: scale(0.95);
-        }
       }
     }
   }

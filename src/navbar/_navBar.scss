@@ -1,5 +1,5 @@
 ._navbar {
-
+z-index: 50;
   backdrop-filter: blur( 2px );
   -webkit-backdrop-filter: blur( 2px );
 
@@ -19,13 +19,29 @@
   height: 10vh;
   font-size: $fontTextSize;
 
-  &__name {
+  &__img{
+    width: 3vw;
+  }
+
+  &__dark {
     color: $secondaryColor;
     margin-left: 1vw;
     cursor: pointer;
     font-family: $fontMainTitle;
     font-size: $fontTextSize;
     font-weight: 100;
+
+    &__span{
+      color: red;
+    }
+
+&__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
   }
 
   &__container {

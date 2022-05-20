@@ -9,6 +9,7 @@ const Skills = () => {
           <span className="_skills__container__title__span">{"<"}</span> Skills{" "}
           <span className="_skills__container__title__span">{" />"}</span>
         </h1>
+
         <div className="_skills__container__title__container">
           <p className="_skills__container__title__container__desc">
             {" "}
@@ -19,8 +20,10 @@ const Skills = () => {
           </p>
         </div>
       </div>
-      <LanguageCardList />
-      <SkillsCardList />
+      <div className="_skills__container__lists">
+        <SkillsCardList />
+        <LanguageCardList />
+      </div>
     </div>
   );
 };
