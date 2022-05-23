@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import handleScroll from "../utils/scroll";
+import Timeline from "../timeline/Timeline";
 
 const Education = ({ projectsRef }) => {
   return (
@@ -61,90 +62,8 @@ const Education = ({ projectsRef }) => {
           </ul>
         </div>
       </div> */}
-      <section id="timeline">
-        <article>
-          <div className="inner">
-            <span className="date">
-              <span className="day">
-                30<sup>th</sup>
-              </span>
-              <span className="month">Jan</span>
-              <span className="year">2014</span>
-            </span>
-            <h2>The Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue
-              adipiscing, eget commodo libero mattis.
-            </p>
-          </div>
-        </article>
-        <article>
-          <div className="inner">
-            <span className="date">
-              <span className="day">
-                26<sup>th</sup>
-              </span>
-              <span className="month">Jan</span>
-              <span className="year">2014</span>
-            </span>
-            <h2>The Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue
-              adipiscing, eget commodo libero mattis.
-            </p>
-          </div>
-        </article>
-        <article>
-          <div className="inner">
-            <span className="date">
-              <span className="day">
-                26<sup>th</sup>
-              </span>
-              <span className="month">Jan</span>
-              <span className="year">2014</span>
-            </span>
-            <h2>The Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue
-              adipiscing, eget commodo libero mattis.
-            </p>
-          </div>
-        </article>
-        <article>
-          <div className="inner">
-            <span className="date">
-              <span className="day">
-                26<sup>th</sup>
-              </span>
-              <span className="month">Jan</span>
-              <span className="year">2014</span>
-            </span>
-            <h2>The Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue
-              adipiscing, eget commodo libero mattis.
-            </p>
-          </div>
-        </article>
-        <article>
-          <div className="inner">
-            <span className="date">
-              <span className="year">2014</span>
-            </span>
-            <h2>The Title</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-              quis rutrum nunc, eget dictum massa. Nam faucibus felis nec augue
-              adipiscing, eget commodo libero mattis.
-            </p>
-          </div>
-        </article>
-      </section>
 
+      <Timeline />
       <div className="_education__scroll">
         <button
           type="button"
