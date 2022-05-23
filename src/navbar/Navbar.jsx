@@ -1,19 +1,18 @@
 import PropTypes from "prop-types";
+import Darkmode from "../darkmode/Darkmode";
 import handleScroll from "../utils/scroll";
 
-const NavBar = ({ homeRef, skillsRef, educationRef, projectsRef }) => {
+const NavBar = ({
+  homeRef,
+  skillsRef,
+  educationRef,
+  projectsRef,
+  setIsActive,
+  isActive,
+}) => {
   return (
     <div className="_navbar">
-      <div className="_navbar__dark__container">
-        <img
-          src="../../public/assets/moonLogo.png"
-          alt="moonLogo"
-          className="_navbar__img"
-        />
-        <h2 className="_navbar__dark">
-          Dark Mode <span className="_navbar__dark__span"> ON</span>
-        </h2>
-      </div>
+      <Darkmode setIsActive={setIsActive} isActive={isActive} />
       <nav className="_navbar__container">
         <ul className="_navbar__container__ul">
           <li
@@ -63,6 +62,8 @@ NavBar.propTypes = {
   skillsRef: PropTypes.func.isRequired,
   educationRef: PropTypes.func.isRequired,
   projectsRef: PropTypes.func.isRequired,
+  isActive: PropTypes.func.isRequired,
+  setIsActive: PropTypes.func.isRequired,
 };
 
 export default NavBar;
