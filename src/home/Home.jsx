@@ -1,5 +1,5 @@
 import { Slide } from "react-awesome-reveal";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Education from "../education/Education";
 import NavBar from "../navbar/Navbar";
 import Projects from "../projects/Projects";
@@ -11,15 +11,18 @@ const Home = () => {
   const skillsRef = useRef();
   const educationRef = useRef();
   const projectsRef = useRef();
+  const [isActive, setIsActive] = useState(true);
 
   return (
-    <div ref={homeRef}>
-      <div className="_home">
+    <div ref={homeRef} className={isActive ? "_home" : "_light__home"}>
+      <div>
         <NavBar
           homeRef={homeRef}
           skillsRef={skillsRef}
           educationRef={educationRef}
           projectsRef={projectsRef}
+          setIsActive={setIsActive}
+          isActive={isActive}
         />
         <Slide direction="left">
           <div className="_home__title">
