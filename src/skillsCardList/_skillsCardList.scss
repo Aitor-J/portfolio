@@ -21,22 +21,19 @@
     align-items: center;
     text-align: center;
 
-&__desc{
-  text-align: left;
-  color: $mainColor3;
-  font-size: 1.5vw;
-  font-family: $fontMainTitle;
-  font-style: italic;
-  font-weight: 300;
-  text-shadow: 1px 1px 1px $secondaryColor2;
-  transition: 1s ease-in-out;
+    &__desc {
+      text-align: left;
+      color: $mainColor3;
+      font-size: 1.5vw;
+      font-family: $fontMainTitle;
+      font-style: italic;
+      font-weight: 300;
+      text-shadow: 1px 1px 1px $secondaryColor2;
+      transition: 1s ease-in-out;
 
-  &__span {
-    color: $secondaryColor2;
-  }
-}
-
-
- 
+      &__span {
+        color: $secondaryColor2;
+      }
+    }
   }
 }
