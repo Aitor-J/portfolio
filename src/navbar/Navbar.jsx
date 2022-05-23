@@ -11,7 +11,7 @@ const NavBar = ({ homeRef, skillsRef, educationRef, projectsRef }) => {
           className="_navbar__img"
         />
         <h2 className="_navbar__dark">
-          Dark Mode <span className="_navbar__dark__span"> OFF</span>
+          Dark Mode <span className="_navbar__dark__span"> ON</span>
         </h2>
       </div>
       <nav className="_navbar__container">
