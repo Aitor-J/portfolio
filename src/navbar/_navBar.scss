@@ -1,8 +1,5 @@
 ._navbar {
-z-index: 50;
-  backdrop-filter: blur( 2px );
-  -webkit-backdrop-filter: blur( 2px );
-
+  z-index: 50;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +16,7 @@ z-index: 50;
   height: 10vh;
   font-size: $fontTextSize;
 
-  &__img{
+  &__img {
     width: 3vw;
   }
 
@@ -31,17 +28,16 @@ z-index: 50;
     font-size: $fontTextSize;
     font-weight: 100;
 
-    &__span{
+    &__span {
       color: red;
     }
 
-&__container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
+    &__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   &__container {

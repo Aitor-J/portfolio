@@ -1,6 +1,36 @@
 ._projects {
-    background-color: rgb(255, 0, 166);
-    height: 100vh;
-    font-size: 5vw;
-    margin-top: 0;
+  background-image: linear-gradient(to top, #5c1b81 0%, #2b0a31 75%, #000000 100%);
+  height: 100vh;
+  font-size: 5vw;
+  margin-top: 0;
+
+  &__scroll {
+    height: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+    &__down {
+      color: $mainColor2;
+      font-size: $fontMainSize;
+      background: none;
+      font-weight: 300;
+      margin-top: 2vh;
+      font-family: $fontMainTitle;
+      cursor: pointer;
+      padding: 1vh 2vw 1vh 2vw;
+      border: solid 2px $mainColor2;
+      border-radius: 50px;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        transition: 1s ease-in-out;
+        background-color: $mainColor;
+      }
+    }
   }
+}
+

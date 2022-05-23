@@ -71,15 +71,14 @@ const Home = () => {
             V
           </button>
         </div>
-
         <div ref={skillsRef}>
-          <Skills />
+          <Skills educationRef={educationRef} />
         </div>
         <div ref={educationRef}>
-          <Education />
+          <Education projectsRef={projectsRef} />
         </div>
         <div ref={projectsRef}>
-          <Projects />
+          <Projects homeRef={homeRef} />
         </div>
       </div>
     </div>
