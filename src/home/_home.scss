@@ -4,13 +4,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-._light__home{
-
+._light__home {
   height: 120vh;
   color: $secondaryColor2;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
-  background-image: url("../../public/assets/backgroundLight.jpg");
+  background-image: url("../../public/assets/backgroundLighte.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -20,7 +19,7 @@
   color: $secondaryColor2;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
-  background-image: url("../../public/assets/backGround.png");
+  background-image: url("../../public/assets/backgroundLight.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
