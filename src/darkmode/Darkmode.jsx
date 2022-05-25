@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+// CREATE USECONTEXT for darkmode
 
 const Darkmode = ({ isActive, setIsActive }) => {
   return (
