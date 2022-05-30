@@ -1,10 +1,10 @@
 ._skills {
-  margin-top: 10vh;
   width: 100vw;
-  color: $secondaryColor2;
+  height: 120vh;
+  color: $mainColor;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
-  background-image: linear-gradient(to top, #2b0a31 0%, black 100%);
+  background-image: linear-gradient(to top, #37151e 0%, #88817b 100%);
 
   &__container {
     background: none;
@@ -15,12 +15,12 @@
 
     &__title {
       margin-top: 10vh;
-      color: rgb(255, 0, 179);
+      color: $mainColor;
       font-weight: 400;
       margin-left: 5vw;
       font-size: 7vw;
       font-family: $fontMainTitle;
-      text-shadow: 2px 2px 2px rgb(183, 0, 255);
+      text-shadow: 2px 2px 2px rgb(255, 255, 255);
       height: 20vh;
 
       &__span {

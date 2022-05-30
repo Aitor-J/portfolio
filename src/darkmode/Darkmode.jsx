@@ -22,18 +22,23 @@ const Darkmode = ({ isActive, setIsActive }) => {
             role="presentation"
           />
         )}
-        <h2
-          className="_navbar__dark"
-          onClick={() => setIsActive(!isActive)}
-          role="presentation"
-        >
-          Dark Mode{" "}
-          {isActive ? (
-            <span className="_navbar__dark__span"> ON</span>
-          ) : (
-            <span className="_navbar__dark__span"> OFF</span>
-          )}
-        </h2>
+        {isActive ? (
+          <h2
+            className="_navbar__dark"
+            onClick={() => setIsActive(!isActive)}
+            role="presentation"
+          >
+            Dark Mode{" "}
+          </h2>
+        ) : (
+          <h2
+            className="_navbar__dark"
+            onClick={() => setIsActive(!isActive)}
+            role="presentation"
+          >
+            Light Mode{" "}
+          </h2>
+        )}
       </div>
     </div>
   );

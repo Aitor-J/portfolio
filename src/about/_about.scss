@@ -1,0 +1,44 @@
+._about {
+  width: 100vw;
+  height: 120vh;
+  font-size: $fontMainSize;
+  font-family: $fontMainTitle;
+  background-image: url("../../public/assets/dayRoad.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    margin-top: -15vh;
+    height: 80vh;
+    width: 80vw;
+    background-color: rgba(31, 22, 0, 0.5);
+    border: solid 5px black;
+    border-radius: 50px;
+    backdrop-filter: blur(5.2px);
+    -webkit-backdrop-filter: blur(5.2px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+      color: #ff4b4e;
+    }
+    &__desc {
+      width: 90%;
+      color: bisque;
+      text-align: center;
+    }
+
+    &__img {
+      width: 10vw;
+      border-radius: 100%;
+      border: solid 3px black;
+    }
+  }
+}

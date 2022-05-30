@@ -4,6 +4,7 @@ import handleScroll from "../utils/scroll";
 
 const NavBar = ({
   homeRef,
+  aboutRef,
   skillsRef,
   educationRef,
   projectsRef,
@@ -23,6 +24,15 @@ const NavBar = ({
             role="presentation"
           >
             Home
+          </li>
+          <li
+            className="_navbar__container__ul__li"
+            onClick={() => handleScroll(aboutRef)}
+            area-hidden="true"
+            onKeyDown={() => handleScroll(aboutRef)}
+            role="presentation"
+          >
+            About me
           </li>
           <li
             className="_navbar__container__ul__li"
@@ -59,6 +69,7 @@ const NavBar = ({
 
 NavBar.propTypes = {
   homeRef: PropTypes.func.isRequired,
+  aboutRef: PropTypes.func.isRequired,
   skillsRef: PropTypes.func.isRequired,
   educationRef: PropTypes.func.isRequired,
   projectsRef: PropTypes.func.isRequired,
