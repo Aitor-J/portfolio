@@ -4,8 +4,8 @@ import Education from "../education/Education";
 import NavBar from "../navbar/Navbar";
 import Projects from "../projects/Projects";
 import Skills from "../skills/Skills";
-import handleScroll from "../utils/scroll";
 import About from "../about/About";
+import ScrollArrow from "../scrollDown/ScrollArrow";
 
 const Home = () => {
   const homeRef = useRef();
@@ -45,16 +45,13 @@ const Home = () => {
             <span className="_home__title__span">{" />"}</span>
           </div>
         </Slide>
-
         <div className="_home__title__container">
           <p className="_home__title__container__desc">
             {" "}
             <span className="_home__title__container__desc__span">
               {"<p>  "}
             </span>
-            Traveler and adventurer, I’ve always been looking for new
-            challenges, and I beleive the meaning of life is an infinite
-            learning.{" "}
+            Web Developper junior, looking for new challenges to grow up...
             <span className="_home__title__container__desc__span">
               {"  </p>"}
             </span>
@@ -62,16 +59,14 @@ const Home = () => {
         </div>
         <div className="_home__title__container"> </div>
         <div className="_home__scroll">
-          <button
-            type="button"
-            className="_home__scroll__down"
-            onClick={() => handleScroll(aboutRef)}
-          >
-            DISCOVER ME
-          </button>
+          <ScrollArrow scroll={aboutRef} nameRef="About me" />
         </div>
         <div ref={aboutRef}>
-          <About skillsRef={skillsRef} />
+          <About
+            skillsRef={skillsRef}
+            setIsActive={setIsActive}
+            isActive={isActive}
+          />
         </div>
         <div ref={skillsRef}>
           <Skills educationRef={educationRef} />

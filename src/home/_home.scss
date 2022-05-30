@@ -33,7 +33,7 @@
     &__span {
       font-weight: 100;
       opacity: 50%;
-      color: $mainColor4;
+      color: #08727f;
       margin-left: 0.3vw;
       margin-top: 13vh;
       font-size: 7vw;
@@ -66,14 +66,13 @@
       align-items: center;
 
       &__desc {
-        width: 30vw;
+        width: 50vw;
         margin-top: 22vh;
-        color: $mainColor;
+        color: wheat;
         height: auto;
-        font-size: 2vw;
+        font-size: 3vw;
         font-family: $fontText;
         margin-left: 5vw;
-        font-style: italic;
         font-weight: 100;
         text-shadow: 1px 1px 1px black;
         transition: 1s ease-in-out;
@@ -86,7 +85,7 @@
         &__span {
           font-weight: 100;
           opacity: 50%;
-          color: $secondaryColor2;
+          color: $secondaryColor;
           margin-left: 0.3vw;
           font-size: 2vw;
           font-family: $fontMainTitle;

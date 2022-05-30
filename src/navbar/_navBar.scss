@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: $fontMainTitle;
-  text-shadow: 1px 1px 1px rgb(242, 0, 255);
+  text-shadow: 1px 1px 1px wheat;
   color: $mainColor;
   padding: 1vh 2vw 1vh 2vw;
   height: 10vh;
@@ -51,17 +51,18 @@
       font-family: $fontMainTitle;
 
       &__li {
-        color: $secondaryColor;
+        color: $mainColor;
         padding: 1vh 2vw 1vh 2vw;
         font-size: $fontTextSize;
         cursor: pointer;
         transition: 0.3s ease-in-out;
 
         &:hover {
-          color: $mainColor;
+          color: wheat;
           padding: 1vh 2vw 1vh 2vw;
           font-size: $fontTextSize;
           letter-spacing: 2px;
+          text-shadow: 1px 1px 1px $mainColor;
         }
       }
     }
