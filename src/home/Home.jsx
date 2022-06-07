@@ -17,16 +17,16 @@ const Home = () => {
 
   return (
     <div ref={homeRef} className={isActive ? "_home" : "_light__home"}>
-      <div>
-        <NavBar
-          homeRef={homeRef}
-          aboutRef={aboutRef}
-          skillsRef={skillsRef}
-          educationRef={educationRef}
-          projectsRef={projectsRef}
-          setIsActive={setIsActive}
-          isActive={isActive}
-        />
+      <NavBar
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        educationRef={educationRef}
+        projectsRef={projectsRef}
+        setIsActive={setIsActive}
+        isActive={isActive}
+      />
+      <div className="_home__container">
         <Slide direction="left">
           <div className="_home__title">
             <span className="_home__title__span">{"<"}</span>
@@ -57,26 +57,25 @@ const Home = () => {
             </span>
           </p>
         </div>
-        <div className="_home__title__container"> </div>
         <div className="_home__scroll">
           <ScrollArrow scroll={aboutRef} nameRef="About me" />
         </div>
-        <div ref={aboutRef}>
-          <About
-            skillsRef={skillsRef}
-            setIsActive={setIsActive}
-            isActive={isActive}
-          />
-        </div>
-        <div ref={skillsRef}>
-          <Skills educationRef={educationRef} />
-        </div>
-        <div ref={educationRef}>
-          <Education projectsRef={projectsRef} />
-        </div>
-        <div ref={projectsRef}>
-          <Projects homeRef={homeRef} />
-        </div>
+      </div>
+      <div ref={aboutRef}>
+        <About
+          skillsRef={skillsRef}
+          setIsActive={setIsActive}
+          isActive={isActive}
+        />
+      </div>
+      <div ref={skillsRef}>
+        <Skills educationRef={educationRef} />
+      </div>
+      <div ref={educationRef}>
+        <Education projectsRef={projectsRef} />
+      </div>
+      <div ref={projectsRef}>
+        <Projects homeRef={homeRef} />
       </div>
     </div>
   );

@@ -4,7 +4,10 @@
   color: $mainColor;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
-  background-image: linear-gradient(to top, #37151e 0%, #88817b 100%);
+  background-image: url("../../public/assets/dayDesert.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &__container {
     background: none;
@@ -15,12 +18,11 @@
 
     &__title {
       margin-top: 10vh;
-      color: $mainColor;
-      font-weight: 400;
-      margin-left: 5vw;
-      font-size: 7vw;
+      color: #ff4b4e;
+      text-shadow: 1px 1px 1px black;
       font-family: $fontMainTitle;
-      text-shadow: 2px 2px 2px rgb(255, 255, 255);
+      letter-spacing: 3px;
+      margin-left: 5vw;
       height: 20vh;
 
       &__span {
@@ -33,17 +35,17 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
+        
 
         &__desc {
           margin-top: 10vh;
-          color: $mainColor;
+          color: wheat;
           width: 40vw;
           height: auto;
-          font-size: $fontTextSize;
+          font-size: 2vw;
           font-family: $fontMainTitle;
-          font-style: italic;
           font-weight: 300;
-          text-shadow: 1px 1px 1px rgb(110, 255, 110);
+          text-shadow: 1px 1px 1px $mainColor;
           transition: 1s ease-in-out;
           text-align: center;
 
@@ -57,9 +59,13 @@
     &__lists {
       margin-top: 10vh;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      background-color: rgba(31, 22, 0, 0.5);
+      border: solid 5px 0 5px 0 black;
+      backdrop-filter: blur(5.2px);
+      -webkit-backdrop-filter: blur(5.2px);
+      height: 60%;
     }
   }
 

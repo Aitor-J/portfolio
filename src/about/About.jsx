@@ -12,9 +12,9 @@ const About = ({ skillsRef, isActive }) => {
           Traveler and adventurer, I’ve always been looking for new challenges,
           and I beleive the meaning of life is an infinite learning. I grew up
           in bask country but Ive been moving around the world since my early
-          youthness, flying or driving. I love creativity and solving problems,
-          thats why I get into this job full of it. Now, if I had one word to
-          describe myself, <br />
+          youthness. I love creativity and solving problems, thats why I get
+          into this job full of it. Now, if I had one word to describe myself,
+          <br />
           it would be
           <div className="slidingVerticalo">
             <span>Open minded.</span>

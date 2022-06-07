@@ -1,43 +1,28 @@
+import { IoMdMoon } from "react-icons/io";
+import { FaSun } from "react-icons/fa";
 import PropTypes from "prop-types";
 // CREATE USECONTEXT for darkmode
 
 const Darkmode = ({ isActive, setIsActive }) => {
   return (
     <div>
-      <div className="_navbar__dark__container">
+      <div>
         {isActive ? (
-          <img
-            src="../../public/assets/moonLogoLight.png"
-            alt="moonLogo"
+          <IoMdMoon
+            color="white"
+            size="3rem"
             className="_navbar__img"
             onClick={() => setIsActive(!isActive)}
             role="presentation"
           />
         ) : (
-          <img
-            src="../../public/assets/moonLogo.png"
-            alt="moonLogo"
+          <FaSun
+            color="white"
+            size="3rem"
             className="_navbar__img"
             onClick={() => setIsActive(!isActive)}
             role="presentation"
           />
-        )}
-        {isActive ? (
-          <h2
-            className="_navbar__dark"
-            onClick={() => setIsActive(!isActive)}
-            role="presentation"
-          >
-            Dark Mode{" "}
-          </h2>
-        ) : (
-          <h2
-            className="_navbar__dark"
-            onClick={() => setIsActive(!isActive)}
-            role="presentation"
-          >
-            Light Mode{" "}
-          </h2>
         )}
       </div>
     </div>
@@ -50,5 +35,3 @@ Darkmode.propTypes = {
 };
 
 export default Darkmode;
-
-// className={isActive ? "_skills" : "_skills__light"}

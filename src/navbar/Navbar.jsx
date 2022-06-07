@@ -1,3 +1,8 @@
+import { AiOutlineHome } from "react-icons/ai";
+import { BiFace } from "react-icons/bi";
+import { TbTools } from "react-icons/tb";
+import { MdOutlineSchool } from "react-icons/md";
+import { IoMdLaptop } from "react-icons/io";
 import PropTypes from "prop-types";
 import Darkmode from "../darkmode/Darkmode";
 import handleScroll from "../utils/scroll";
@@ -13,9 +18,19 @@ const NavBar = ({
 }) => {
   return (
     <div className="_navbar">
-      <Darkmode setIsActive={setIsActive} isActive={isActive} />
       <nav className="_navbar__container">
         <ul className="_navbar__container__ul">
+          <li className="_navbar__container__ul__li">
+            <div
+              className="_navbar__container__ul__li__cont"
+              onClick={() => setIsActive(!isActive)}
+              role="presentation"
+            >
+              {" "}
+              <Darkmode setIsActive={setIsActive} isActive={isActive} />
+              <p className="_navbar__container__ul__li__cont__link"> Theme</p>
+            </div>
+          </li>
           <li
             className="_navbar__container__ul__li"
             onClick={() => handleScroll(homeRef)}
@@ -23,7 +38,11 @@ const NavBar = ({
             onKeyDown={() => handleScroll(homeRef)}
             role="presentation"
           >
-            Home
+            <div className="_navbar__container__ul__li__cont">
+              {" "}
+              <AiOutlineHome color="white" size="3rem" />{" "}
+              <p className="_navbar__container__ul__li__cont__link"> Home</p>
+            </div>
           </li>
           <li
             className="_navbar__container__ul__li"
@@ -32,7 +51,11 @@ const NavBar = ({
             onKeyDown={() => handleScroll(aboutRef)}
             role="presentation"
           >
-            About me
+            <div className="_navbar__container__ul__li__cont">
+              {" "}
+              <BiFace color="white" size="3rem" />
+              <p className="_navbar__container__ul__li__cont__link"> About</p>
+            </div>
           </li>
           <li
             className="_navbar__container__ul__li"
@@ -41,7 +64,11 @@ const NavBar = ({
             onKeyDown={() => handleScroll(skillsRef)}
             role="presentation"
           >
-            Skills
+            <div className="_navbar__container__ul__li__cont">
+              {" "}
+              <TbTools color="white" size="3rem" />
+              <p className="_navbar__container__ul__li__cont__link"> Skills</p>
+            </div>
           </li>
           <li
             className="_navbar__container__ul__li"
@@ -50,7 +77,11 @@ const NavBar = ({
             onKeyDown={() => handleScroll(educationRef)}
             role="presentation"
           >
-            Education
+            <div className="_navbar__container__ul__li__cont">
+              {" "}
+              <MdOutlineSchool color="white" size="3rem" />
+              <p className="_navbar__container__ul__li__cont__link"> Resume</p>
+            </div>
           </li>
           <li
             className="_navbar__container__ul__li"
@@ -59,7 +90,14 @@ const NavBar = ({
             onKeyDown={() => handleScroll(projectsRef)}
             role="presentation"
           >
-            Projects
+            <div className="_navbar__container__ul__li__cont">
+              {" "}
+              <IoMdLaptop color="white" size="3rem" />
+              <p className="_navbar__container__ul__li__cont__link">
+                {" "}
+                Projects
+              </p>
+            </div>
           </li>
         </ul>
       </nav>

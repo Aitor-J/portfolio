@@ -55,3 +55,21 @@ Voici un template déjà configuré pour vos projets front-end.
 # Install
 
 - npm install animate.css --save
+
+### PACKAGE Carousel
+
+# Doc
+
+- https://openbase.com/js/react-alice-carousel
+
+# Install
+
+- npm i react-alice-carousel
+
+
+
+
+
+https://react-icons.github.io/react-icons/
+
+https://www.react-reveal.com/
