@@ -36,16 +36,6 @@ Voici un template déjà configuré pour vos projets front-end.
 
 - npm install react-awesome-reveal --save
 
-### PACKAGE react-slick
-
-# Doc
-
-- https://react-slick.neostack.com/docs/get-started
-
-# Install
-
-- npm install react-slick --save
-
 ### PACKAGE animate.css
 
 # Doc
@@ -55,3 +45,5 @@ Voici un template déjà configuré pour vos projets front-end.
 # Install
 
 - npm install animate.css --save
+
+https://react-icons.github.io/react-icons/

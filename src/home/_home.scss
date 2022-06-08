@@ -5,166 +5,91 @@
   box-sizing: border-box;
 }
 ._light__home {
-  height: 120vh;
+  height: 130vh;
   color: $secondaryColor2;
   font-size: $fontMainSize;
-  font-family: $fontMainTitle;
-  background-image: url("../../public/assets/backgroundLighte.jpg");
+  font-family: $fontText;
+  background-image: url("../../public/assets/night.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 ._home {
-  height: 120vh;
+  height: 130vh;
   color: $secondaryColor2;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
-  background-image: url("../../public/assets/backgroundLight.jpg");
+  background-image: url("../../public/assets/day.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 112vh;
+  }
 
   &__title {
     margin-left: 4vw;
     display: flex;
     flex-direction: row;
+    font-family: $fontText;
+    z-index: 50;
 
     &__span {
       font-weight: 100;
       opacity: 50%;
-      color: $mainColor4;
+      color: #08727f;
       margin-left: 0.3vw;
-      margin-top: 13vh;
       font-size: 7vw;
-      font-family: $fontMainTitle;
-      z-index: 20;
+      font-family: $fontText;
     }
 
     &__bounce {
       color: $mainColor;
       font-weight: 600;
       margin-left: 0.3vw;
-      margin-top: 13vh;
       font-size: 7vw;
-      font-family: $fontMainTitle;
+      font-family: $fontText;
       animation-name: reverse-rubberBand;
       animation-duration: 1s;
       transition: 1s ease-in-out;
+      z-index: 50;
+      cursor: pointer;
 
       &:hover {
         animation: rubberBand;
         animation-duration: 1s;
         transition: 0.3s;
         color: $secondaryColor;
+        z-index: 50;
       }
     }
 
     &__container {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
       &__desc {
-        margin-top: 10vh;
-        color: $secondaryColor;
-        width: 30vw;
-        height: auto;
-        font-size: $fontTextSize;
-        font-family: $fontMainTitle;
-        margin-right: 3vw;
-        font-style: italic;
+        margin-top: 8rem;
+        width: 50vw;
+        color: wheat;
+        font-size: 3vw;
+        font-family: $fontText;
+        margin-left: 5vw;
         font-weight: 100;
-        text-shadow: 1px 1px 1px rgb(110, 255, 110);
-        transition: 1s ease-in-out;
-
-        &:hover {
-          color: rgb(255, 13, 0);
-          text-shadow: 1px 1px 1px rgb(177, 0, 171);
-        }
+        text-shadow: 1px 1px 1px black;
 
         &__span {
           font-weight: 100;
           opacity: 50%;
-          color: $secondaryColor2;
+          color: $secondaryColor;
           margin-left: 0.3vw;
           font-size: 2vw;
           font-family: $fontMainTitle;
           cursor: pointer;
           z-index: 20;
         }
-
-        &__name {
-          font-family: $fontMainTitle;
-          color: $secondaryColor;
-          font-size: 3vw;
-          font-weight: 400;
-          margin-top: 12vh;
-          margin-right: 6vw;
-
-          background-image: linear-gradient(
-            225deg,
-            $mainColor 0%,
-            $secondaryColor 29%,
-            $mainColor2 67%,
-            $secondaryColor2 80%,
-            #fff800 100%
-          );
-          background-size: auto auto;
-          background-clip: border-box;
-          background-size: 200% auto;
-          color: #fff;
-          background-clip: text;
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: textclip 5s linear infinite;
-          display: inline-block;
-
-          @keyframes textclip {
-            to {
-              background-position: 200% center;
-            }
-          }
-          &__span {
-            font-weight: 600;
-          }
-        }
       }
     }
-  }
-  &__scroll {
-    margin-top: 8vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-    &__down {
-      margin-bottom: 6vh;
-      color: $mainColor3;
-      font-size: $fontMainSize;
-      font-weight: 100;
-      font-family: $fontMainTitle;
-      background: none;
-      opacity: 0.7;
-      cursor: pointer;
-      padding: 1vh 1vw 1vh 1vw;
-      border: solid 0.1vw $mainColor3;
-      border-radius: 2vw;
-      transition: 1s ease-in-out;
-      backdrop-filter: blur(5.2px);
-      -webkit-backdrop-filter: blur(5.2px);
-
-      &:hover {
-        transition: 1s ease-in-out;
-        background-color: $secondaryColor;
-        color: $secondaryColor3;
-        border: solid 0.2vw $secondaryColor3;
-      }
-    }
-  }
-
-  &__component {
-    display: flex;
-    flex-direction: column;
   }
 }
