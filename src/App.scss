@@ -3,11 +3,13 @@
 @import "sass/_typography.scss";
 @import "sass/_index.scss";
 @import "./home/_home";
+@import "./about/_about";
 @import "./navbar/_navBar";
 @import "./skills/_skills";
-@import "./languageCardList/_languageCard";
-@import "./languageCardList/_languageCardList";
-@import "./skillsCardList/skillCard";
-@import "./skillsCardList/SkillsCardList";
+@import "./languageCard/_languageCard";
 @import "./education/education";
 @import "./projects/projects";
+@import "./timeline/timeline";
+@import "./darkmode/darkmode";
+@import "./scrollDown/scrollArrow.scss";
+@import "./sass/rotate";

@@ -1,0 +1,123 @@
+._education {
+  background-image: linear-gradient(to top, black 0%, #2b0a31 100%);
+  height: 150vh;
+  font-size: 5vw;
+  margin-top: 0;
+
+  &__container {
+    background: none;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+
+    &__title {
+      margin-top: 15vh;
+      color: rgb(255, 0, 179);
+      font-weight: 400;
+      margin-left: 5vw;
+      font-size: 7vw;
+      font-family: $fontMainTitle;
+      text-shadow: 2px 2px 2px rgb(183, 0, 255);
+      height: 20vh;
+
+      &__span {
+        font-weight: 100;
+        opacity: 30%;
+      }
+
+      &__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+
+        &__desc {
+          margin-top: 15vh;
+          color: $mainColor;
+          width: 40vw;
+          height: auto;
+          font-size: $fontTextSize;
+          font-family: $fontMainTitle;
+          font-style: italic;
+          font-weight: 300;
+          text-shadow: 1px 1px 1px rgb(110, 255, 110);
+          transition: 1s ease-in-out;
+          text-align: center;
+
+          &:hover {
+            color: rgb(255, 13, 0);
+            text-shadow: 1px 1px 1px rgb(177, 0, 171);
+          }
+        }
+      }
+    }
+  }
+  &__list__container {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+
+    &__experiences {
+      width: 40vw;
+      text-align: center;
+
+      &__ul {
+        list-style: none;
+
+        &__li {
+          font-size: 1vw;
+        }
+      }
+    }
+
+    &__dates {
+      width: 5vw;
+
+      &__p {
+        font-size: 1vw;
+      }
+    }
+
+    &__school {
+      width: 40vw;
+      text-align: center;
+
+      &__ul {
+        list-style: none;
+
+        &__li {
+          font-size: 1vw;
+        }
+      }
+    }
+  }
+
+  &__scroll {
+    height: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__down {
+      color: $mainColor2;
+      font-size: $fontMainSize;
+      background: none;
+      font-weight: 300;
+      // margin-top: 110vh;
+      font-family: $fontMainTitle;
+      cursor: pointer;
+      padding: 1vh 2vw 1vh 2vw;
+      border: solid 2px $mainColor2;
+      border-radius: 50px;
+      transition: 1s ease-in-out;
+
+      &:hover {
+        transition: 1s ease-in-out;
+        background-color: $mainColor;
+      }
+    }
+  }
+}

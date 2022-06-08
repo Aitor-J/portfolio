@@ -1,27 +1,39 @@
-import LanguageCardList from "../languageCardList/LanguageCardList.jsx";
-import SkillsCardList from "../skillsCardList/SkillsCardList.jsx";
+import PropTypes from "prop-types";
+import ScrollArrow from "../scrollDown/ScrollArrow.jsx";
+import LanguageCard from "../languageCard/LanguageCard";
+import datas from "../languageCard/dataLanguages";
 
-const Skills = () => {
+const Skills = ({ educationRef }) => {
   return (
     <div className="_skills">
       <div className="_skills__container">
-        <h1 className="_skills__container__title">
-          <span className="_skills__container__title__span">{"<"}</span> Skills{" "}
-          <span className="_skills__container__title__span">{" />"}</span>
-        </h1>
-        <div className="_skills__container__title__container">
-          <p className="_skills__container__title__container__desc">
-            {" "}
-            <span className="_skills__container__title__span">{"<p>  "}</span>I
-            guess we want to know a little bit about my skills and the languages
-            Ive learn so far.{" "}
-            <span className="_skills__container__title__span">{"  </p>"}</span>
-          </p>
+        <h1 className="_skills__container__title">Web Technologies </h1>
+        <div className="_skills__container__languages">
+          {datas &&
+            datas.map((data, index) => (
+              <LanguageCard key={index} logo={data.logo} name={data.name} />
+            ))}
         </div>
+        {/* <h1 className="_skills__container__title">Soft Skills </h1>
+        <div className="slidingVerticalo">
+          <span className="_skills__container__desc">Design</span>
+          <span className="_skills__container__desc">Adaptation </span>
+          <span className="_skills__container__desc">Team spirit</span>
+          <span className="_skills__container__desc">Problem solving </span>
+          <span className="_skills__container__desc">
+            Communicating with impact
+          </span>
+        </div> */}
       </div>
-      <LanguageCardList />
-      <SkillsCardList />
+
+      <div className="_skills__scroll">
+        <ScrollArrow scroll={educationRef} nameRef="EDUCATION" />
+      </div>
     </div>
   );
+};
+
+Skills.propTypes = {
+  educationRef: PropTypes.func.isRequired,
 };
 export default Skills;

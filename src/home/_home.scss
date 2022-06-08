@@ -1,111 +1,93 @@
+@import "animate.css";
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
-
+._light__home {
+  height: 130vh;
+  color: $secondaryColor2;
+  font-size: $fontMainSize;
+  font-family: $fontText;
+  background-image: url("../../public/assets/night.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 ._home {
-  height: 100vh;
+  height: 130vh;
   color: $secondaryColor2;
   font-size: $fontMainSize;
   font-family: $fontMainTitle;
+  background-image: url("../../public/assets/day.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 112vh;
+  }
 
   &__title {
-    color: $mainColor;
-    font-weight: 400;
-    margin-left: 5vw;
-    margin-top: 10vh;
-    font-size: 7vw;
-    font-family: $fontMainTitle;
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: row;
+    font-family: $fontText;
+    z-index: 50;
 
     &__span {
       font-weight: 100;
-      opacity: 30%;
+      opacity: 50%;
+      color: #08727f;
+      margin-left: 0.3vw;
+      font-size: 7vw;
+      font-family: $fontText;
+    }
+
+    &__bounce {
+      color: $mainColor;
+      font-weight: 600;
+      margin-left: 0.3vw;
+      font-size: 7vw;
+      font-family: $fontText;
+      animation-name: reverse-rubberBand;
+      animation-duration: 1s;
+      transition: 1s ease-in-out;
+      z-index: 50;
+      cursor: pointer;
+
+      &:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+        transition: 0.3s;
+        color: $secondaryColor;
+        z-index: 50;
+      }
     }
 
     &__container {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-
       &__desc {
-        margin-top: 10vh;
-        color: $secondaryColor;
+        margin-top: 8rem;
         width: 50vw;
-        height: auto;
-        font-size: $fontTextSize;
-        font-family: $fontMainTitle;
-        margin-right: 5vw;
-        font-style: italic;
+        color: wheat;
+        font-size: 3vw;
+        font-family: $fontText;
+        margin-left: 5vw;
         font-weight: 100;
-        text-shadow: 1px 1px 1px rgb(110, 255, 110);
-        transition: 1s ease-in-out;
+        text-shadow: 1px 1px 1px black;
 
-        &:hover {
-          color: rgb(255, 13, 0);
-          text-shadow: 1px 1px 1px rgb(177, 0, 171);
-        }
-
-        &__name {
-          font-family: $fontMainTitle;
+        &__span {
+          font-weight: 100;
+          opacity: 50%;
           color: $secondaryColor;
-          font-size: 3vw;
-          font-weight: 400;
-          margin-top: 5vh;
-          margin-right: 5vw;
-
-          &__span {
-            font-weight: 600;
-            text-shadow: 2px 2px 2px red;
-          }
-        }
-      }
-    }
-  }
-  &__scroll {
-    margin-top: 15vh;
-    background-color: $secondaryColor;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-    &__img {
-      width: 3vw;
-    }
-
-    &__down {
-      color: $secondaryColor;
-      font-size: $fontMainSize;
-      font-weight: 500;
-      margin-top: 2vh;
-      font-family: $fontMainTitle;
-      animation: pulse-title 5s infinite;
-      cursor: pointer;
-      background-color: rgb(23, 17, 111);
-      padding: 1vh 2vw 1vh 2vw;
-      border: solid $mainColor;
-      border-radius: 40px;
-      transition: 1s ease-in-out;
-
-      &:hover {
-        letter-spacing: 0.2vw;
-        transition: 1s ease-in-out;
-        background-color: $mainColor;
-        color: $secondaryColor2;
-      }
-
-      @keyframes pulse-title {
-        0% {
-          transform: scale(0.95);
-        }
-
-        70% {
-          transform: scale(1);
-        }
-
-        100% {
-          transform: scale(0.95);
+          margin-left: 0.3vw;
+          font-size: 2vw;
+          font-family: $fontMainTitle;
+          cursor: pointer;
+          z-index: 20;
         }
       }
     }
