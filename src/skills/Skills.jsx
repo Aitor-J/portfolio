@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import ScrollArrow from "../scrollDown/ScrollArrow.jsx";
-import LanguageCard from "../languageCardList/LanguageCard";
-import datas from "../languageCardList/dataLanguages";
+import LanguageCard from "../languageCard/LanguageCard";
+import datas from "../languageCard/dataLanguages";
 
 const Skills = ({ educationRef }) => {
   return (

@@ -11,21 +11,19 @@
   height: 10vh;
   font-size: $fontTextSize;
 
-
   &__img {
     width: 3vw;
     cursor: pointer;
   }
 
-    &__span {
-      color: red;
-    }
+  &__span {
+    color: red;
+  }
 
-    &__container {
-      display: flex;
-      flex-direction: column;
-    }
-
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
 
   &__container {
     width: 30vw;
@@ -47,8 +45,6 @@
         text-align: left;
         transform: translateX(86%);
 
-
-
         &__cont {
           display: flex;
           flex-direction: row;
@@ -62,7 +58,7 @@
           backdrop-filter: blur(9px);
           -webkit-backdrop-filter: blur(9px);
 
-          &__link{
+          &__link {
             padding-left: 1rem;
             text-shadow: 1px 1px 1px black;
             font-size: 1.6rem;
@@ -78,7 +74,6 @@
           transform: translateX(53%);
           padding: 1vh 6vw 1vh 0;
         }
-        
       }
     }
   }
