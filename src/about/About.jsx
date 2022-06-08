@@ -1,5 +1,4 @@
 import PropTypes from "prop-types";
-import { Rotate } from "react-awesome-reveal";
 import ScrollArrow from "../scrollDown/ScrollArrow";
 
 const About = ({ skillsRef, isActive }) => {
@@ -56,7 +55,6 @@ const About = ({ skillsRef, isActive }) => {
           </div>
         </div>
       </div>
-      <Rotate />
       <ScrollArrow scroll={skillsRef} nameRef="Skills" />
     </div>
   );

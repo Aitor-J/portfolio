@@ -2,9 +2,9 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BiFace } from "react-icons/bi";
 import { TbTools } from "react-icons/tb";
 import { MdOutlineSchool } from "react-icons/md";
-import { IoMdLaptop } from "react-icons/io";
+import { IoMdLaptop, IoMdMoon } from "react-icons/io";
 import PropTypes from "prop-types";
-import Darkmode from "../darkmode/Darkmode";
+import { FaSun } from "react-icons/fa";
 import handleScroll from "../utils/scroll";
 
 const NavBar = ({
@@ -20,14 +20,20 @@ const NavBar = ({
     <div className="_navbar">
       <nav className="_navbar__container">
         <ul className="_navbar__container__ul">
-          <li className="_navbar__container__ul__li">
-            <div
-              className="_navbar__container__ul__li__cont"
-              onClick={() => setIsActive(!isActive)}
-              role="presentation"
-            >
+          <li
+            className="_navbar__container__ul__li"
+            onClick={() => setIsActive(!isActive)}
+            onKeyDown={() => setIsActive(!isActive)}
+            role="presentation"
+            area-hidden="true"
+          >
+            <div className="_navbar__container__ul__li__cont">
               {" "}
-              <Darkmode setIsActive={setIsActive} isActive={isActive} />
+              {isActive ? (
+                <IoMdMoon color="white" size="3rem" />
+              ) : (
+                <FaSun color="white" size="3rem" />
+              )}
               <p className="_navbar__container__ul__li__cont__link"> Theme</p>
             </div>
           </li>
@@ -40,7 +46,7 @@ const NavBar = ({
           >
             <div className="_navbar__container__ul__li__cont">
               {" "}
-              <AiOutlineHome color="white" size="3rem" />{" "}
+              <AiOutlineHome color="white" size="3rem" className="ok" />{" "}
               <p className="_navbar__container__ul__li__cont__link"> Home</p>
             </div>
           </li>
@@ -80,7 +86,7 @@ const NavBar = ({
             <div className="_navbar__container__ul__li__cont">
               {" "}
               <MdOutlineSchool color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link"> Resume</p>
+              <p className="_navbar__container__ul__li__cont__link">Resume</p>
             </div>
           </li>
           <li
@@ -93,10 +99,7 @@ const NavBar = ({
             <div className="_navbar__container__ul__li__cont">
               {" "}
               <IoMdLaptop color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link">
-                {" "}
-                Projects
-              </p>
+              <p className="_navbar__container__ul__li__cont__link">Projects</p>
             </div>
           </li>
         </ul>

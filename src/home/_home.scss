@@ -24,19 +24,19 @@
   background-repeat: no-repeat;
   background-position: center center;
 
-&__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 112vh;
-}
-
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 112vh;
+  }
 
   &__title {
     margin-left: 4vw;
     display: flex;
     flex-direction: row;
     font-family: $fontText;
+    z-index: 50;
 
     &__span {
       font-weight: 100;
@@ -45,7 +45,7 @@
       margin-left: 0.3vw;
       font-size: 7vw;
       font-family: $fontText;
-      z-index: 20;
+
     }
 
     &__bounce {
@@ -57,17 +57,19 @@
       animation-name: reverse-rubberBand;
       animation-duration: 1s;
       transition: 1s ease-in-out;
+      z-index: 50;
+      cursor: pointer;
 
       &:hover {
         animation: rubberBand;
         animation-duration: 1s;
         transition: 0.3s;
         color: $secondaryColor;
+        z-index: 50;
       }
     }
 
     &__container {
-
       &__desc {
         margin-top: 8rem;
         width: 50vw;
@@ -77,7 +79,6 @@
         margin-left: 5vw;
         font-weight: 100;
         text-shadow: 1px 1px 1px black;
-
 
         &__span {
           font-weight: 100;
@@ -92,4 +93,4 @@
       }
     }
   }
-  }
+}
