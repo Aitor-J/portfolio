@@ -26,29 +26,29 @@ const About = ({ skillsRef, isActive }) => {
         <div className="_about__container__images">
           <div>
             <img
-              src="./assets/plane.png"
+              src="/assets/plane.png"
               alt="plane"
               className="_about__container__img1"
             />
             <img
-              src="./assets/earth.png"
+              src="/assets/earth.png"
               alt="plane"
               className="_about__container__img2"
             />
           </div>
           <img
-            src="./assets/profilPicA.png"
+            src="/assets/profilPicA.png"
             alt="profilPix"
             className="_about__container__img"
           />
           <div>
             <img
-              src="./assets/compass.png"
+              src="/assets/compass.png"
               alt="plane"
               className="_about__container__img4"
             />
             <img
-              src="./assets/compassNiddle.png"
+              src="/assets/compassNiddle.png"
               alt="plane"
               className="_about__container__img5"
             />
