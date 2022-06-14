@@ -1,77 +1,77 @@
 const dataLanguages = [
   {
     name: "HTML",
-    logo: "../../public/icons/HTML.svg",
+    logo: "/icons/HTML.svg",
     level: "75%",
   },
   {
     name: "CSS",
-    logo: "../../public/icons/CSS.svg",
+    logo: "/icons/CSS.svg",
     level: "75%",
   },
   {
     name: "JS",
-    logo: "../../public/icons/JavaScript.svg",
+    logo: "/icons/JavaScript.svg",
     level: "75%",
   },
   {
     name: "React",
-    logo: "../../public/icons/React-Dark.svg",
+    logo: "/icons/React-Dark.svg",
     level: "75%",
   },
   {
     name: "Node",
-    logo: "../../public/icons/NodeJS-Dark.svg",
+    logo: "/icons/NodeJS-Dark.svg",
     level: "75%",
   },
   {
     name: "SASS",
-    logo: "../../public/icons/Sass.svg",
+    logo: "/icons/Sass.svg",
     level: "75%",
   },
   {
     name: "Tailwind",
-    logo: "../../public/icons/TailwindCSS-Dark.svg",
+    logo: "/icons/TailwindCSS-Dark.svg",
     level: "75%",
   },
   {
     name: "Git workflow",
-    logo: "../../public/icons/Github-Dark.svg",
+    logo: "/icons/Github-Dark.svg",
     level: "75%",
   },
   {
     name: "VSCode",
-    logo: "../../public/icons/VSCode-Dark.svg",
+    logo: "/icons/VSCode-Dark.svg",
     level: "75%",
   },
   {
     name: "TypeScript",
-    logo: "../../public/icons/TypeScript.svg",
+    logo: "/icons/TypeScript.svg",
     level: "75%",
   },
   {
     name: "Photshop",
-    logo: "../../public/icons/Photoshop.svg",
+    logo: "/icons/Photoshop.svg",
     level: "75%",
   },
   {
     name: "MySQL",
-    logo: "../../public/icons/MySQL-Dark.svg",
+    logo: "/icons/MySQL-Dark.svg",
     level: "75%",
   },
   {
     name: "Figma",
-    logo: "../../public/icons/Figma-Dark.svg",
+    logo: "/icons/Figma-Dark.svg",
     level: "75%",
   },
   {
     name: "ExpressJS",
-    logo: "../../public/icons/ExpressJS-Dark.svg",
+    logo: "/icons/ExpressJS-Dark.svg",
     level: "75%",
   },
   {
     name: "Postman",
-    logo: "../../public/icons/getpostman-icon.svg",
+    logo: "/icons/getpostman-icon.svg",
     level: "75%",
   },
 ];
