@@ -47,3 +47,9 @@ Voici un template déjà configuré pour vos projets front-end.
 - npm install animate.css --save
 
 https://react-icons.github.io/react-icons/
+
+### PACKAGE scroll once
+
+- npm install react-scroll
+
+- https://www.npmjs.com/package/react-scroll
