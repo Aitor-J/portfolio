@@ -7,8 +7,6 @@ import Skills from "../skills/Skills";
 import About from "../about/About";
 import ScrollArrow from "../scrollDown/ScrollArrow";
 
-// reparer les images screenshot pas de blanc sur les coté
-
 const Home = () => {
   const homeRef = useRef();
   const aboutRef = useRef();
