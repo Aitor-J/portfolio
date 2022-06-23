@@ -4,9 +4,9 @@
   position: fixed;
   display: flex;
   flex-direction: column;
-  margin-top: 7.5%;
+  margin-top: 0;
   font-family: $fontMainTitle;
-  text-shadow: 1px 1px 1px wheat;
+  text-shadow: 1px 1px 1px rgb(255, 155, 211);
   color: $mainColor;
   height: 10vh;
   font-size: $fontTextSize;
@@ -17,7 +17,7 @@
   }
 
   &__span {
-    color: red;
+    color: rgb(154, 0, 220);
   }
 
   &__container {
@@ -27,6 +27,7 @@
 
   &__container {
     width: 30vw;
+
     &__ul {
       text-align: left;
       padding: 2vh 0 1vh 0;
@@ -37,7 +38,7 @@
       font-family: $fontMainTitle;
 
       &__li {
-        color: white;
+        color: rgb(145, 40, 40);
         padding: 1vh 10vw 1vh 0;
         font-size: $fontTextSize;
         cursor: pointer;
@@ -45,23 +46,65 @@
         text-align: left;
         transform: translateX(86%);
 
+        &__step {
+          margin-top: 7rem;
+          color: white;
+          padding: 1vh 10vw 1vh 0;
+          font-size: $fontTextSize;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+          text-align: left;
+          transform: translateX(86%);
+
+          &:hover {
+            color: white;
+            font-style: bold;
+            font-weight: 700;
+            font-size: $fontTextSize;
+            text-shadow: 1px 1px 1px $mainColor;
+            transform: translateX(53%);
+            padding: 1vh 6vw 1vh 0;
+          }
+        }
+
         &__cont {
           display: flex;
           flex-direction: row;
           justify-content: flex-start;
           align-items: center;
           width: 100%;
-          background-color: rgba(255, 255, 255, 0.3);
+          background-color: rgba(0, 0, 0, 0.289);
           border: solid 1px white;
           border-radius: 12px;
           padding: 0.5rem 0 0.5rem 0.5rem;
           backdrop-filter: blur(9px);
           -webkit-backdrop-filter: blur(9px);
 
+          &__function {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.289);
+            border: solid 1px rgb(255, 255, 255);
+            border-radius: 12px;
+            padding: 0.5rem 0 0.5rem 0.5rem;
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+          }
+
           &__link {
             padding-left: 1rem;
             text-shadow: 1px 1px 1px black;
             font-size: 1.6rem;
+
+            &__red {
+              padding-left: 1rem;
+              text-shadow: 1px 1px 1px black;
+              font-size: 1.6rem;
+              color: rgb(255, 13, 118);
+            }
           }
         }
 

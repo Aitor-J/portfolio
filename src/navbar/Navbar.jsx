@@ -3,8 +3,11 @@ import { BiFace } from "react-icons/bi";
 import { TbTools } from "react-icons/tb";
 import { MdOutlineSchool } from "react-icons/md";
 import { IoMdLaptop, IoMdMoon } from "react-icons/io";
+import { BsMusicPlayer } from "react-icons/bs";
 import PropTypes from "prop-types";
 import { FaSun } from "react-icons/fa";
+import { useState } from "react";
+import ReactPlayer from "react-player";
 import handleScroll from "../utils/scroll";
 
 const NavBar = ({
@@ -16,6 +19,12 @@ const NavBar = ({
   setIsActive,
   isActive,
 }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+  // function to revert the value of the variable
+  const handleChange = () => {
+    setIsPlaying(!isPlaying);
+  };
+
   return (
     <div className="_navbar">
       <nav className="_navbar__container">
@@ -27,27 +36,61 @@ const NavBar = ({
             role="presentation"
             area-hidden="true"
           >
-            <div className="_navbar__container__ul__li__cont">
+            <div className="_navbar__container__ul__li__cont__function">
               {" "}
               {isActive ? (
                 <IoMdMoon color="white" size="3rem" />
               ) : (
-                <FaSun color="white" size="3rem" />
+                <FaSun color="rgb(255, 217, 146)" size="3rem" />
               )}
-              <p className="_navbar__container__ul__li__cont__link"> Theme</p>
+              <p className="_navbar__container__ul__li__cont__link"> THEME</p>
             </div>
           </li>
           <li
             className="_navbar__container__ul__li"
+            onClick={handleChange}
+            area-hidden="true"
+            role="presentation"
+          >
+            <div className="_navbar__container__ul__li__cont__function">
+              {" "}
+              {isActive ? (
+                <BsMusicPlayer color="white" size="3rem" />
+              ) : (
+                <BsMusicPlayer color="rgb(255, 0, 119)" size="3rem" />
+              )}
+              <ReactPlayer
+                url="https://soundcloud.com/fabfab2/waves-and-birds"
+                width="0"
+                height="0"
+                playing={isPlaying}
+                volume={0.3}
+              />
+              {isPlaying ? (
+                <p className="_navbar__container__ul__li__cont__link__red">
+                  {" "}
+                  STOP
+                </p>
+              ) : (
+                <p className="_navbar__container__ul__li__cont__link"> PLAY</p>
+              )}
+            </div>
+          </li>
+
+          <li
+            className="_navbar__container__ul__li__step"
             onClick={() => handleScroll(homeRef)}
             area-hidden="true"
             onKeyDown={() => handleScroll(homeRef)}
             role="presentation"
           >
             <div className="_navbar__container__ul__li__cont">
-              {" "}
-              <AiOutlineHome color="white" size="3rem" className="ok" />{" "}
-              <p className="_navbar__container__ul__li__cont__link"> Home</p>
+              {isActive ? (
+                <AiOutlineHome color="white" size="3rem" />
+              ) : (
+                <AiOutlineHome color="rgb(0, 213, 255)" size="3rem" />
+              )}
+              <p className="_navbar__container__ul__li__cont__link"> HOME</p>
             </div>
           </li>
           <li
@@ -59,8 +102,12 @@ const NavBar = ({
           >
             <div className="_navbar__container__ul__li__cont">
               {" "}
-              <BiFace color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link"> About</p>
+              {isActive ? (
+                <BiFace color="white" size="3rem" />
+              ) : (
+                <BiFace color="rgb(255, 155, 211)" size="3rem" />
+              )}
+              <p className="_navbar__container__ul__li__cont__link"> ABOUT</p>
             </div>
           </li>
           <li
@@ -72,8 +119,12 @@ const NavBar = ({
           >
             <div className="_navbar__container__ul__li__cont">
               {" "}
-              <TbTools color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link"> Skills</p>
+              {isActive ? (
+                <TbTools color="white" size="3rem" />
+              ) : (
+                <TbTools color="rgb(0, 171, 54)" size="3rem" />
+              )}
+              <p className="_navbar__container__ul__li__cont__link"> SKILLS</p>
             </div>
           </li>
           <li
@@ -85,8 +136,12 @@ const NavBar = ({
           >
             <div className="_navbar__container__ul__li__cont">
               {" "}
-              <MdOutlineSchool color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link">Resume</p>
+              {isActive ? (
+                <MdOutlineSchool color="white" size="3rem" />
+              ) : (
+                <MdOutlineSchool color="rgb(154, 0, 220)" size="3rem" />
+              )}
+              <p className="_navbar__container__ul__li__cont__link">RESUME</p>
             </div>
           </li>
           <li
@@ -98,8 +153,12 @@ const NavBar = ({
           >
             <div className="_navbar__container__ul__li__cont">
               {" "}
-              <IoMdLaptop color="white" size="3rem" />
-              <p className="_navbar__container__ul__li__cont__link">Projects</p>
+              {isActive ? (
+                <IoMdLaptop color="white" size="3rem" />
+              ) : (
+                <IoMdLaptop color="rgb(197, 197, 197)" size="3rem" />
+              )}
+              <p className="_navbar__container__ul__li__cont__link">PROJECTS</p>
             </div>
           </li>
         </ul>

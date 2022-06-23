@@ -4,7 +4,9 @@ import ScrollArrow from "../scrollDown/ScrollArrow";
 const About = ({ skillsRef, isActive }) => {
   return (
     <div className={isActive ? "_about" : "_light__about"}>
-      <div className="_about__container">
+      <div
+        className={isActive ? "_about__container" : "_about__container__light"}
+      >
         <h1 className="_about__container__title">About me</h1>
         <p className="_about__container__desc">
           Hello, and thank you for visiting my Website. <br />
@@ -39,7 +41,11 @@ const About = ({ skillsRef, isActive }) => {
           <img
             src="/assets/profilPicA.png"
             alt="profilPix"
-            className="_about__container__img"
+            className={
+              isActive
+                ? "_about__container__img"
+                : "_about__container__img__light"
+            }
           />
           <div>
             <img
