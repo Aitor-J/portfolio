@@ -53,3 +53,7 @@ https://react-icons.github.io/react-icons/
 - npm install react-scroll
 
 - https://www.npmjs.com/package/react-scroll
+
+npm install react-player
+
+https://react-icons.github.io/react-icons/

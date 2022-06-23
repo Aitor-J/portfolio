@@ -4,6 +4,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 ._light__home {
   height: 130vh;
   color: $secondaryColor2;
@@ -13,7 +14,41 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
+  &__title {
+    margin-left: 4vw;
+    display: flex;
+    flex-direction: row;
+    font-family: $fontText;
+    z-index: 50;
+
+    &__bounce {
+      color: rgb(255, 217, 146, 0.7);
+      font-weight: 600;
+      margin-left: 0.3vw;
+      font-size: 7vw;
+      font-family: $fontText;
+      animation-name: reverse-rubberBand;
+      animation-duration: 1s;
+      transition: 1s ease-in-out;
+      z-index: 50;
+      cursor: pointer;
+
+      &:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+        transition: 0.3s;
+        color: rgb(239, 255, 17);
+        z-index: 50;
+        text-shadow: 0 0 7px rgb(241, 178, 255), 0 0 10px rgb(241, 178, 255),
+          0 0 21px rgb(241, 178, 255), 0 0 42px rgb(239, 255, 17),
+          0 0 82px rgb(239, 255, 17), 0 0 92px rgb(239, 255, 17),
+          0 0 102px rgb(239, 255, 17), 0 0 151px rgb(239, 255, 17);
+      }
+    }
+  }
 }
+
 ._home {
   height: 130vh;
   color: $secondaryColor2;
@@ -45,6 +80,15 @@
       margin-left: 0.3vw;
       font-size: 7vw;
       font-family: $fontText;
+
+      &__light {
+        font-weight: 100;
+        opacity: 80%;
+        color: rgb(255, 30, 217);
+        margin-left: 0.3vw;
+        font-size: 7vw;
+        font-family: $fontText;
+      }
     }
 
     &__bounce {
@@ -79,6 +123,18 @@
         font-weight: 100;
         text-shadow: 1px 1px 1px black;
 
+        &__light {
+          margin-top: 8rem;
+          width: 50vw;
+          color: wheat;
+          font-size: 3vw;
+          font-family: $fontText;
+          margin-left: 5vw;
+          font-weight: 100;
+          text-shadow: 1px 1px 1px black;
+          transition: 0.3s ease-in-out;
+        }
+
         &__span {
           font-weight: 100;
           opacity: 50%;
@@ -88,6 +144,17 @@
           font-family: $fontMainTitle;
           cursor: pointer;
           z-index: 20;
+
+          &__light {
+            font-weight: 100;
+            opacity: 90%;
+            color: rgb(255, 30, 217);
+            margin-left: 0.3vw;
+            font-size: 2vw;
+            font-family: $fontMainTitle;
+            cursor: pointer;
+            z-index: 20;
+          }
         }
       }
     }
