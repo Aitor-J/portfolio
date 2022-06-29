@@ -3,7 +3,7 @@ import { BiFace } from "react-icons/bi";
 import { TbTools } from "react-icons/tb";
 import { MdOutlineSchool } from "react-icons/md";
 import { IoMdLaptop, IoMdMoon } from "react-icons/io";
-import { BsMusicPlayer } from "react-icons/bs";
+import { BsDisc } from "react-icons/bs";
 import PropTypes from "prop-types";
 import { FaSun } from "react-icons/fa";
 import { useState } from "react";
@@ -55,9 +55,9 @@ const NavBar = ({
             <div className="_navbar__container__ul__li__cont__function">
               {" "}
               {isActive ? (
-                <BsMusicPlayer color="white" size="3rem" />
+                <BsDisc color="white" size="3rem" />
               ) : (
-                <BsMusicPlayer color="rgb(255, 0, 119)" size="3rem" />
+                <BsDisc color="rgb(255, 0, 119)" size="3rem" />
               )}
               <ReactPlayer
                 url="https://soundcloud.com/fabfab2/waves-and-birds"
