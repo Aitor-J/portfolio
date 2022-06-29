@@ -1,12 +1,14 @@
 import "./App.scss";
 import Home from "./home/Home";
+import Loader from "./loader/Loader";
 
-function App() {
+const App = () => {
   return (
-    <div className="app">
+    <div>
+      <Loader />
       <Home />
     </div>
   );
-}
+};
 
 export default App;

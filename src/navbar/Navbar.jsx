@@ -53,11 +53,10 @@ const NavBar = ({
             role="presentation"
           >
             <div className="_navbar__container__ul__li__cont__function">
-              {" "}
-              {isActive ? (
-                <BsDisc color="white" size="3rem" />
+              {isPlaying ? (
+                <BsDisc color="white" size="3rem" className="rotation" />
               ) : (
-                <BsDisc color="rgb(255, 0, 119)" size="3rem" />
+                <BsDisc color="white" size="3rem" />
               )}
               <ReactPlayer
                 url="https://soundcloud.com/fabfab2/waves-and-birds"

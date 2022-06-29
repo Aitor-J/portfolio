@@ -1,0 +1,32 @@
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100vw;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  animation: opacityOn 5s normal forwards;
+  animation-delay: 3s;
+  pointer-events: none;
+
+  @keyframes opacityOn {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  &__container {
+    font-family: "Made-Bold";
+  }
+}
